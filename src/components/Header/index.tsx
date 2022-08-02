@@ -1,19 +1,28 @@
 import React, { useEffect, useState } from "react";
 import styles from "./style.module.css";
-import { themeLight, themeDark } from "../../UI/cores";
 import navItem from "../../utils/data";
 import Link from "next/link";
-import { CgMenu } from "react-icons/cg";
+import { CgMenu, CgClose } from "react-icons/cg";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 
 type Props = {
   StringLogo: string;
-  // DarkTheme: boolean;
+  ColorBgHeader: string;
+  MenuMobileColor: string;
 };
 
-export const Header = ({ StringLogo }: Props) => {
+export const Header = ({
+  StringLogo,
+  ColorBgHeader,
+  MenuMobileColor,
+}: Props) => {
   const [isActive, setIsActive] = useState<boolean>(false);
   const { height, width } = useWindowDimensions();
+  const [menuActive, setMenuActive] = useState<boolean>(false);
+
+  const handleMenu = () => {
+    setMenuActive(!menuActive);
+  };
 
   useEffect(() => {
     if (width) {
@@ -28,12 +37,12 @@ export const Header = ({ StringLogo }: Props) => {
   return (
     <header
       className={styles.header}
-      style={{ backgroundColor: themeDark.Color1 }}
+      style={{ backgroundColor: ColorBgHeader }}
     >
       <div className={styles.Logo}>{StringLogo}</div>
       <nav className={styles.nav}>
         {isActive === true ? (
-          <CgMenu color="#fff" />
+          <CgMenu color="#fff" onClick={handleMenu} />
         ) : (
           <>
             {navItem.map((data, index) => {
@@ -48,6 +57,24 @@ export const Header = ({ StringLogo }: Props) => {
           </>
         )}
       </nav>
+      {menuActive === true ? (
+        <div
+          className={styles.navMobile}
+          style={{ backgroundColor: MenuMobileColor }}
+        >
+          {navItem.map((data, index) => {
+            return (
+              <>
+                <Link key={index} href={data.path}>
+                  <a>
+                    <li>{data.name}</li>
+                  </a>
+                </Link>
+              </>
+            );
+          })}
+        </div>
+      ) : null}
     </header>
   );
 };

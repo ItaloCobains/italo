@@ -15,3 +15,14 @@ a {
     box-sizing: border-box;
 }
 
+.btn_dark_mode{
+  position: absolute;
+  top: 90%;
+  bottom: 0;
+  right: 0;
+  left: 85%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
