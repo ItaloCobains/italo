@@ -1,6 +1,6 @@
 export const themeLight = {
-  "Color1": "#CDF0EA",
-  "Color2": "#F9F9F9",
+  "Color1": "#816797",
+  "Color2": "#51557E",
   "Color3": "#F6C6EA",
   "Color4": "#FAF4B7"
 }
