@@ -58,22 +58,24 @@ export const Header = ({
         )}
       </nav>
       {menuActive === true ? (
-        <div
-          className={styles.navMobile}
-          style={{ backgroundColor: MenuMobileColor }}
-        >
-          {navItem.map((data, index) => {
-            return (
-              <>
-                <Link key={index} href={data.path}>
-                  <a>
-                    <li>{data.name}</li>
-                  </a>
-                </Link>
-              </>
-            );
-          })}
-        </div>
+        <>
+          <div
+            className={styles.navMobile}
+            style={{ backgroundColor: MenuMobileColor }}
+          >
+            {navItem.map((data, index) => {
+              return (
+                <>
+                  <Link key={index} href={data.path}>
+                    <a>
+                      <li>{data.name}</li>
+                    </a>
+                  </Link>
+                </>
+              );
+            })}
+          </div>
+        </>
       ) : null}
     </header>
   );
