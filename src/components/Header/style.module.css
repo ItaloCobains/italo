@@ -33,8 +33,7 @@
   color: #fff;
   width: 100%;
   position: absolute;
-  margin-top: 310px;
-  
+  margin-top: 300px;
   list-style: none outside none;
   display: flex;
   flex-direction: column;
@@ -43,4 +42,5 @@
   cursor: pointer;
   padding: 20px;
   border-radius: 0 0 10px 10px;
+  transition: all ease 1s;
 }
