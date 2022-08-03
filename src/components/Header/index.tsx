@@ -2,19 +2,21 @@ import React, { useEffect, useState } from "react";
 import styles from "./style.module.css";
 import navItem from "../../utils/data";
 import Link from "next/link";
-import { CgMenu, CgClose } from "react-icons/cg";
+import { CgMenu } from "react-icons/cg";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 
 type Props = {
   StringLogo: string;
   ColorBgHeader: string;
   MenuMobileColor: string;
+  IconColor: string;
 };
 
 export const Header = ({
   StringLogo,
   ColorBgHeader,
   MenuMobileColor,
+  IconColor,
 }: Props) => {
   const [isActive, setIsActive] = useState<boolean>(false);
   const { height, width } = useWindowDimensions();
@@ -42,7 +44,7 @@ export const Header = ({
       <div className={styles.Logo}>{StringLogo}</div>
       <nav className={styles.nav}>
         {isActive === true ? (
-          <CgMenu color="#fff" onClick={handleMenu} />
+          <CgMenu color={IconColor} onClick={handleMenu} />
         ) : (
           <>
             {navItem.map((data, index) => {

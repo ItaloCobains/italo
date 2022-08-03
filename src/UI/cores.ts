@@ -1,8 +1,8 @@
 export const themeLight = {
-  "Color1": "#816797",
-  "Color2": "#51557E",
+  "Color1": "#E5E5E5",
+  "Color2": "#282828",
   "Color3": "#F6C6EA",
-  "Color4": "#FAF4B7"
+  "Color4": "#FAF4B7",
 }
 
 export const themeDark = {

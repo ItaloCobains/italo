@@ -29,7 +29,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <>
-      <Header ColorBgHeader={colorPatterns.Color2} MenuMobileColor={colorPatterns.Color2}  StringLogo="ItaloCobains" />
+      <Header IconColor={colorPatterns.Color2} ColorBgHeader={colorPatterns.Color1} MenuMobileColor={colorPatterns.Color1}  StringLogo="ItaloCobains" />
       <Component {...pageProps} />
       {darkMode === true ? (
         <WiNightClear
