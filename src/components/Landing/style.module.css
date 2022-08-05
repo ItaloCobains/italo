@@ -1,6 +1,8 @@
+/* Dx reponsivo a 800px */
+
 .container {
   display: flex;
-  width: 1140px;
+  max-width: 1140px;
   margin: auto;
   justify-content: space-around;
 }
@@ -48,6 +50,7 @@
   justify-content: center;
   align-items: center;
   margin-right: 10px;
+  box-shadow: 1px 1px 1px black;
 }
 
 .CiruloScrollEffect {
@@ -55,4 +58,10 @@
   height: 20px;
   border-radius: 50px;
   border: 1px solid black;
+}
+
+@media (max-width: 850px) {
+  .AreaImage{
+    display: none;
+  }
 }

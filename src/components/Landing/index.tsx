@@ -22,7 +22,7 @@ const Landing = () => {
           <div className={styles.ScrollTitle}>Scrol Down</div>
         </div>
       </div>
-      <div>
+      <div className={styles.AreaImage}>
         <Image
           src={action}
           alt="Picture of the author"
