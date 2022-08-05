@@ -5,6 +5,7 @@ export const themeLight = {
   "Color4": "#FAF4B7",
 }
 
+// Trocar esse dark theme pls
 export const themeDark = {
   "Color1": "#2C3333",
   "Color2": "#395B64",

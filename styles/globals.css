@@ -1,23 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@400;600;700;800&family=Poppins:wght@100;400;800&display=swap");
+
 html,
 body {
-    padding: 0;
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    background-color: #E5E5E5;
-    color: #282828;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", "Inter", "Amaranth", -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
+  background-color: #e5e5e5;
+  color: #282828;
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.btn_dark_mode{
+.btn_dark_mode {
   position: absolute;
   top: 90%;
   bottom: 0;
@@ -26,5 +29,3 @@ a {
   border-radius: 50%;
   cursor: pointer;
 }
-
-
