@@ -28,7 +28,7 @@ export const Header = ({
 
   useEffect(() => {
     if (width) {
-      if (width >= 800) {
+      if (width >= 850) {
         setIsActive(false);
       } else {
         setIsActive(true);
