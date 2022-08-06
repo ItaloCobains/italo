@@ -15,7 +15,7 @@ const navItem = [
     path: "/resume",
   },
   {
-    name: "Contrate me",
+    name: "Contrate-me",
     path: "#contact",
   },
 ]

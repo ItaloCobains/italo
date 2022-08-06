@@ -2,13 +2,15 @@
 
 .container {
   display: flex;
-  max-width: 1140px;
+  max-width: 1500px;
   margin: auto;
   justify-content: space-around;
 }
 
 .containerTitles {
   margin-top: 150px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .Title {
@@ -38,7 +40,6 @@
   display: flex;
   align-items: center;
   margin-top: 50px;
-  cursor: pointer;
 }
 
 .ScrollIcon {
@@ -51,6 +52,7 @@
   align-items: center;
   margin-right: 10px;
   box-shadow: 1px 1px 1px black;
+  cursor: pointer;
 }
 
 .CiruloScrollEffect {
@@ -63,29 +65,31 @@
 .Cube1 {
   position: absolute;
   top: 35%;
-  left: 40%;
+  left: 34%;
 }
 
 .Cube2 {
   position: absolute;
   top: 20%;
-  left: 43%;
+  left: 38%;
 }
 
 .Cube3 {
   position: absolute;
   top: 10%;
-  left: 46%;
+  left: 43%;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 900px) {
+  
   .AreaImage {
     display: none;
   }
+  
 }
 
 
-@media (max-width: 950px) {
+@media (max-width: 1297px) {
   .Cube1 {
     display: none;
   }
@@ -99,7 +103,7 @@
   }
 }
 
-@media(max-width: 1820px){
+/* @media(max-width: 1820px){
   .Cube1 {
     position: absolute;
     top: 35%;
@@ -117,4 +121,4 @@
     top: 10%;
     left: 45%;
   }
-}
+} */
