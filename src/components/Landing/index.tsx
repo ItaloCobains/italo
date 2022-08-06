@@ -2,10 +2,23 @@ import React from "react";
 import styles from "./style.module.css";
 import Image from "next/image";
 import action from "./../../../public/img/boy.png";
+import cube from "../../../public/img/cube.png";
 
 const Landing = () => {
   return (
     <div className={styles.container}>
+      <div className={styles.Cube1}>
+        <Image src={cube} alt="cube" width={162} height={162} />
+      </div>
+
+      <div className={styles.Cube2}>
+        <Image src={cube} alt="cube" width={112} height={112} />
+      </div>
+
+      <div className={styles.Cube3}>
+        <Image src={cube} alt="cube" width={72} height={72} />
+      </div>
+
       <div className={styles.containerTitles}>
         <div className={styles.Title}>
           Olá, Eu sou <br />

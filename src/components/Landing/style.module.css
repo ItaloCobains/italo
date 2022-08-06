@@ -60,8 +60,61 @@
   border: 1px solid black;
 }
 
+.Cube1 {
+  position: absolute;
+  top: 35%;
+  left: 40%;
+}
+
+.Cube2 {
+  position: absolute;
+  top: 20%;
+  left: 43%;
+}
+
+.Cube3 {
+  position: absolute;
+  top: 10%;
+  left: 46%;
+}
+
 @media (max-width: 850px) {
-  .AreaImage{
+  .AreaImage {
     display: none;
+  }
+}
+
+
+@media (max-width: 950px) {
+  .Cube1 {
+    display: none;
+  }
+  
+  .Cube2 {
+    display: none;
+  }
+  
+  .Cube3 {
+    display: none;
+  }
+}
+
+@media(max-width: 1820px){
+  .Cube1 {
+    position: absolute;
+    top: 35%;
+    left: 35%;
+  }
+  
+  .Cube2 {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+  }
+  
+  .Cube3 {
+    position: absolute;
+    top: 10%;
+    left: 45%;
   }
 }

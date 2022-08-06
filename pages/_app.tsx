@@ -29,9 +29,14 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <>
-      <Header IconColor={colorPatterns.Color2} ColorBgHeader={colorPatterns.Color1} MenuMobileColor={colorPatterns.Color1}  StringLogo="ItaloCobains" />
+      <Header
+        IconColor={colorPatterns.Color2}
+        ColorBgHeader={colorPatterns.Color1}
+        MenuMobileColor={colorPatterns.Color1}
+        StringLogo="ItaloCobains"
+      />
       <Component {...pageProps} />
-      {darkMode === true ? (
+      {/* {darkMode === true ? (
         <WiNightClear
           size="2em"
           color="#000"
@@ -47,7 +52,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           style={{ backgroundColor: colorPatterns.Color1 }}
           onClick={handleIcon}
         />
-      )}
+      )} */}
     </>
   );
 }
