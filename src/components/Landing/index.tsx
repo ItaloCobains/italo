@@ -5,6 +5,17 @@ import action from "./../../../public/img/boy.png";
 import cube from "../../../public/img/cube.png";
 
 const Landing = () => {
+  const handleDownLoadResume = () => {
+    const URL = "#";
+    if (typeof window !== undefined) {
+      window.location.href = URL;
+    }
+  };
+
+  const handleButtonScroll = () => {
+    return;
+  }
+
   return (
     <div className={styles.container}>
       <div className={styles.Cube1}>
@@ -25,11 +36,13 @@ const Landing = () => {
           ItaloCobains
         </div>
         <div className={styles.AreaDownload}>
-          <div className={styles.TitleDownload}>Download Resume</div>
+          <div onClick={handleDownLoadResume} className={styles.TitleDownload}>
+            Download Resume
+          </div>
           <div className={styles.EffectDownload}></div>
         </div>
         <div className={styles.areaScroll}>
-          <div className={styles.ScrollIcon}>
+          <div onClick={handleButtonScroll} className={styles.ScrollIcon}>
             <div className={styles.CiruloScrollEffect}></div>
           </div>
           <div className={styles.ScrollTitle}>Scrol Down</div>
@@ -39,8 +52,8 @@ const Landing = () => {
         <Image
           src={action}
           alt="Picture of the author"
-          width={500}
-          height={500}
+          width={700}
+          height={700}
         />
       </div>
     </div>
