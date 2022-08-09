@@ -6,11 +6,15 @@ import cube from "../../../public/img/cube.png";
 
 const Landing = () => {
   const handleDownLoadResume = () => {
-    const URL = "https://m3.material.io/styles/icons";
+    const URL = "#";
     if (typeof window !== undefined) {
       window.location.href = URL;
     }
   };
+
+  const handleButtonScroll = () => {
+    return;
+  }
 
   return (
     <div className={styles.container}>
@@ -38,7 +42,7 @@ const Landing = () => {
           <div className={styles.EffectDownload}></div>
         </div>
         <div className={styles.areaScroll}>
-          <div className={styles.ScrollIcon}>
+          <div onClick={handleButtonScroll} className={styles.ScrollIcon}>
             <div className={styles.CiruloScrollEffect}></div>
           </div>
           <div className={styles.ScrollTitle}>Scrol Down</div>

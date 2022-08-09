@@ -2,8 +2,6 @@
 
 .container {
   display: flex;
-  max-width: 1500px;
-  margin: auto;
   justify-content: space-around;
 }
 
@@ -28,6 +26,7 @@
   font-weight: 400;
   font-size: 16px;
   margin-right: 10px;
+  cursor: pointer;
 }
 
 .EffectDownload {

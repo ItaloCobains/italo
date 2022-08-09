@@ -9,6 +9,8 @@ body {
     Helvetica Neue, sans-serif;
   background-color: #e5e5e5;
   color: #282828;
+  max-width: 1500px;
+  margin: auto;
 }
 
 a {
