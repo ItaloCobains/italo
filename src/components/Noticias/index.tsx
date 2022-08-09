@@ -12,6 +12,7 @@ const noticia = () => {
     event.preventDefault();
     // fazer requisição a api aqui
     alert(`Foi enviado um email para ${email}`);
+    setEmail("");
   };
 
   return (
