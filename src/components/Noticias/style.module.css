@@ -36,13 +36,24 @@
   font-size: 16px;
   border: none;
   outline: none;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  padding: 50px;
 }
 
 .msg {
   position: absolute;
   font-size: 16px;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  margin-right: 730px;
+  margin-top: 825px;
 }
 
 .arrows {
+  display: none;
   position: absolute;
+  top: 825px;
+  left: 1810px;
 }
+
