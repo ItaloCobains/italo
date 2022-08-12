@@ -33,11 +33,13 @@ const noticia = () => {
             placeholder="Entre com seu email"
           />
         </form>
-        <div>
-          <h3 className={styles.msg}>Enviar agora</h3>
-          <div className={styles.arrows}>
-            <Image src={arrow} alt="arrow" width={10} height={10} />
-            <Image src={arrow} alt="arrow" width={10} height={10} />
+        <div className={styles.button}>
+          <div className={styles.msg} onClick={handleSubmit}>
+            Enviar agora
+          </div>
+          <div>
+            <Image src={arrow} alt="Arrow" width={15} height={15} />
+            <Image src={arrow} alt="Arrow" width={15} height={15} />
           </div>
         </div>
       </div>
