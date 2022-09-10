@@ -10,8 +10,10 @@ const noticia = () => {
 
   const handleSubmit = (event: React.FormEvent): void => {
     event.preventDefault();
-    // fazer requisição a api aqui
-    alert(`Foi enviado um email para ${email}`);
+
+    
+
+
     setEmail("");
   };
 
@@ -27,7 +29,7 @@ const noticia = () => {
         <form onSubmit={handleSubmit}>
           <input
             className={styles.InputField}
-            type="text"
+            type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Entre com seu email"
@@ -37,7 +39,7 @@ const noticia = () => {
           <div className={styles.msg} onClick={handleSubmit}>
             Enviar agora
           </div>
-          <div>
+          <div onClick={handleSubmit}>
             <Image src={arrow} alt="Arrow" width={15} height={15} />
             <Image src={arrow} alt="Arrow" width={15} height={15} />
           </div>
